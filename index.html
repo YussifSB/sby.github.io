@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yussif Sophyani Banaamwini – Research, Projects and Publications</title>
+<meta name="description" content="Postdoctoral Fellow at UESTC working on action recognition, human-computer interaction and game development. Projects, publications and teaching.">
+<style>
+:root{--bg:#f4f6f8;--surface:#fff;--ink:#13202f;--muted:#56657a;--line:#d9e0e8;--accent:#0b6e6e;--accent-ink:#fff;--tag:#e3eef0;--shadow:rgba(19,32,47,.08);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1720;--surface:#16212d;--ink:#e8edf3;--muted:#9aa9bb;--line:#27364a;--accent:#4fc3c3;--accent-ink:#06222a;--tag:#1d3140;--shadow:rgba(0,0,0,.4);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1720;--surface:#16212d;--ink:#e8edf3;--muted:#9aa9bb;--line:#27364a;--accent:#4fc3c3;--accent-ink:#06222a;--tag:#1d3140;--shadow:rgba(0,0,0,.4);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:700;line-height:1.2;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.layout{max-width:1120px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:280px 1fr;gap:56px}
+aside{position:sticky;top:0;align-self:start;padding:48px 0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;gap:18px}
+aside h1{font-size:2rem}
+.role{color:var(--muted);margin:6px 0 0}
+.bio{margin:0;font-size:.93rem}
+.links,.nav{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.nav{border-top:1px solid var(--line);padding-top:14px}
+.nav a,.links a{text-decoration:none;color:var(--ink)}
+.nav a:hover,.links a:hover{color:var(--accent);text-decoration:underline}
+.links a{font-weight:600}
+#theme{margin-top:auto;align-self:flex-start;background:none;border:1px solid var(--line);color:var(--ink);padding:6px 12px;border-radius:6px;cursor:pointer;font:inherit;font-size:.85rem}
+main{padding:48px 0 96px;min-width:0}
+section{margin-bottom:68px}
+section>h2{font-size:1.6rem;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+h3.sub{font-size:1.05rem;font-family:system-ui,sans-serif;margin:22px 0 8px}
+.lead{max-width:68ch;font-family:Georgia,"Times New Roman",serif;line-height:1.7;margin:0 0 18px}
+.facts{display:grid;gap:12px;margin:0}
+.facts div,.entry{display:grid;grid-template-columns:150px 1fr;gap:16px}
+.facts dt{font-weight:600;color:var(--muted)}
+.facts dd{margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0 0 14px;padding:0}
+.tags li{background:var(--tag);padding:2px 10px;border-radius:4px;font-size:.84rem}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.filters button{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 14px;border-radius:999px;cursor:pointer;font:inherit;font-size:.9rem}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.timeline{display:flex;flex-direction:column;gap:40px;border-left:2px solid var(--line);margin-left:6px}
+.project{position:relative;padding-left:32px}
+.project::before{content:"";position:absolute;left:-8px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.project[hidden]{display:none}
+.date{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums}
+.project h3{font-size:1.5rem;margin:2px 0 8px}
+.type{font-weight:600;color:var(--accent)}
+.desc{max-width:68ch;margin:0 0 12px;font-family:Georgia,"Times New Roman",serif;line-height:1.7}
+.points{max-width:68ch;margin:0 0 14px;padding-left:20px}
+.points li{margin-bottom:4px}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-bottom:14px}
+.shot{padding:0;border:1px solid var(--line);background:var(--surface);border-radius:6px;overflow:hidden;cursor:zoom-in;aspect-ratio:16/10;box-shadow:0 1px 3px var(--shadow)}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.shot.missing{cursor:default;display:grid;place-items:center;color:var(--muted);font-size:.85rem;background:repeating-linear-gradient(45deg,var(--surface),var(--surface) 10px,var(--tag) 10px,var(--tag) 20px)}
+.video{grid-column:1/-1;max-width:720px;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.video video,.video iframe{width:100%;height:100%;border:0;display:block}
+.project-links{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+.entry{margin-bottom:18px}
+.entry h3{font-size:1.05rem;font-family:system-ui,sans-serif}
+.entry p{margin:2px 0 0;color:var(--muted);font-size:.93rem}
+.pubs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.pubs li{display:grid;grid-template-columns:52px 1fr;gap:12px}
+.pubs .yr{color:var(--muted);font-variant-numeric:tabular-nums}
+.pubs .t{font-weight:600}
+.pubs .v{color:var(--muted);font-size:.9rem}
+.pubs .rk{background:var(--tag);border-radius:4px;padding:0 6px;font-size:.78rem;margin-left:4px;white-space:nowrap}
+.check{display:flex;gap:8px;align-items:center;margin-bottom:18px;font-size:.92rem}
+.plain{margin:0;padding-left:20px}
+.plain li{margin-bottom:5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+dialog{border:0;background:transparent;padding:0;max-width:94vw;max-height:94vh}
+dialog::backdrop{background:rgba(0,0,0,.82)}
+dialog img{max-width:94vw;max-height:84vh;display:block;border-radius:6px;margin:0 auto}
+dialog p{color:#fff;text-align:center;margin:8px 0 0}
+dialog button{position:absolute;top:-4px;right:0;background:#fff;color:#000;border:0;border-radius:6px;padding:4px 10px;cursor:pointer;font:inherit}
+footer{color:var(--muted);font-size:.85rem}
+@media (max-width:860px){
+.layout{grid-template-columns:1fr;gap:0}
+aside{position:static;height:auto;padding:36px 0 8px;overflow:visible}
+.nav{flex-direction:row;flex-wrap:wrap;gap:6px 18px}
+#theme{margin-top:0}
+main{padding-top:24px}
+.facts div,.entry,.two{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+  <div>
+    <h1>Yussif Sophyani Banaamwini</h1>
+    <p class="role">Postdoctoral Fellow, University of Electronic Science and Technology of China (UESTC)</p>
+  </div>
+  <p class="bio">Researcher and educator in computer vision, human-computer interaction and game development. Open to relocation.</p>
+  <ul class="links">
+    <li><a href="https://scholar.google.com/citations?hl=en&user=6_TduqYAAAAJ">Google Scholar</a></li>
+    <li><a href="https://orcid.org/0000-0002-6462-5320">ORCID</a></li>
+    <li><a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
+    <li><a href="mailto:sophyaniyussif@uestc.edu.cn">sophyaniyussif@uestc.edu.cn</a></li>
+    <li><a href="assets/YussifSB_CV_EN.pdf">Download CV (PDF)</a></li>
+  </ul>
+  <ul class="nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#background">Education &amp; experience</a></li>
+    <li><a href="#teaching">Teaching &amp; service</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
+  <button id="theme" type="button" aria-label="Switch between light and dark theme">Switch theme</button>
+</aside>
+
+<main>
+<section id="about">
+  <h2>About</h2>
+  <p class="lead">I am a computer science researcher and educator. My work covers machine learning, computer vision and human-computer interaction, and I build intelligent systems and interactive games and apps. I have 19 publications, including papers at ACM Multimedia and in Information Fusion, IEEE Sensors Journal and IEEE TCSVT, and I teach and mentor graduate students.</p>
+  <h3 class="sub">Research and teaching interests</h3>
+  <ul class="tags">
+    <li>Machine / deep learning</li><li>Natural language processing</li><li>Human activity recognition</li>
+    <li>Computer vision (medical imaging, remote sensing)</li><li>Human-computer interaction</li><li>Game design and development</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="filters" role="group" aria-label="Filter projects by type"></div>
+  <div class="timeline" id="list"></div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <label class="check"><input type="checkbox" id="first"> Show first-author papers only</label>
+  <ul class="pubs" id="pubs"></ul>
+  <p><a href="https://scholar.google.com/citations?hl=en&user=6_TduqYAAAAJ">Full list and citations on Google Scholar</a></p>
+</section>
+
+<section id="background">
+  <h2>Education &amp; experience</h2>
+  <h3 class="sub">Education</h3>
+  <div class="entry"><span class="date">Sep 2020 – Dec 2024</span><div><h3>Ph.D., Computer Science and Technology</h3><p>University of Electronic Science and Technology of China</p></div></div>
+  <div class="entry"><span class="date">Sep 2018 – Jun 2020</span><div><h3>M.Eng., Computer Science and Technology</h3><p>University of Electronic Science and Technology of China</p></div></div>
+  <div class="entry"><span class="date">Aug 2013 – May 2017</span><div><h3>B.Sc., Mathematics with Economics</h3><p>University of Cape Coast, Ghana</p></div></div>
+  <h3 class="sub">Experience</h3>
+  <div class="entry"><span class="date">Jan 2025 – present</span><div><h3>Postdoctoral Fellow</h3><p>School of Computer Science and Engineering (School of Cyber Security), UESTC. Develops action recognition and HCI systems for industrial use, assists in teaching three courses and mentors 3 PhD and 1 Master student.</p></div></div>
+  <div class="entry"><span class="date">Sep 2020 – Nov 2024</span><div><h3>Postgraduate Teaching / Research Assistant</h3><p>UESTC. Built new deep learning frameworks for human activity recognition, supported the publication cycle for a lab of four PhD students, and graded the postgraduate course Multimedia Technology and Applications.</p></div></div>
+  <div class="entry"><span class="date">Sep 2018 – May 2020</span><div><h3>Graduate Research Assistant</h3><p>UESTC. Led computer vision research on activity recognition and HCI systems, and helped build multiplayer virtual reality scenes.</p></div></div>
+  <div class="entry"><span class="date">Sep 2017 – Aug 2018</span><div><h3>Assistant Secretary, Dean's Office</h3><p>Faculty of Social Sciences, University of Cape Coast. Recorded the Appointments and Promotions Committee, ran the faculty internship programme and screened admissions.</p></div></div>
+  <h3 class="sub">Awards and honors</h3>
+  <ul class="plain">
+    <li>PhD scholarship, UESTC, 2020–2024</li>
+    <li>Master's scholarship, UESTC, 2018–2020</li>
+    <li>Academic Achievement Award (second prize), UESTC, 2018–2019</li>
+    <li>Excellent Performance Award (second prize), UESTC, 2018–2019</li>
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>Teaching &amp; service</h2>
+  <dl class="facts">
+    <div><dt>Courses</dt><dd>Human-Computer Interaction, Game Design and Game Development (assisting, 2025–present). Multimedia Technology and Applications (postgraduate, assisting and grading).</dd></div>
+    <div><dt>Mentoring</dt><dd>3 PhD and 1 Master student, plus informal guidance on machine learning frameworks for research colleagues.</dd></div>
+    <div><dt>Workshops</dt><dd>Multi-day Keras (TensorFlow) deep learning workshop series for graduate researchers at UESTC. Seminars on research methods and scientific writing.</dd></div>
+    <div><dt>Peer review</dt><dd>IEEE TCSVT, Information Fusion, Alexandria Engineering Journal, Scientific Reports, Engineering Applications of Artificial Intelligence, ACM Multimedia.</dd></div>
+  </dl>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="two">
+    <div>
+      <h3 class="sub">Programming and frameworks</h3>
+      <ul class="plain">
+        <li>C# for Unity (gameplay, UI, 2D/3D)</li>
+        <li>Python: PyTorch, TensorFlow, Keras, scikit-learn, Pandas, NumPy, OpenCV, NLTK</li>
+        <li>C++, HTML and CSS</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="sub">Tools</h3>
+      <ul class="plain">
+        <li>Unity Engine (games, VR, real-time apps)</li>
+        <li>Blender and Adobe Photoshop</li>
+        <li>VS Code, Azure DevOps, Microsoft Office</li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="sub">Languages</h3>
+  <ul class="tags"><li>English (fluent)</li><li>Dagaare (native)</li><li>Akan (native)</li><li>Mandarin Chinese (basic)</li></ul>
+</section>
+
+<footer>© <span id="year"></span> Yussif Sophyani Banaamwini</footer>
+</main>
+</div>
+
+<dialog id="lightbox" aria-label="Enlarged screenshot">
+  <button type="button" id="close" aria-label="Close">Close</button>
+  <img alt=""><p></p>
+</dialog>
+
+<script>
+/* ===== PROJECTS: edit here. Files go in assets/ =====
+   start/end: "YYYY-MM" (end: null = present). video: {file, poster} or {youtube:"ID"} */
+const PROJECTS = [
+  {
+    title: "AI Glasses: worker supervision for car assembly",
+    type: "Research",
+    start: "2026-02", end: null,
+    description: "An automated supervision system for car-industry assembly lines that combines deep learning with smart glasses (XR). I co-lead the project and set its technical roadmap.",
+    points: [
+      "Deep learning models detect and analyse worker activities during assembly in real time.",
+      "Smart-glasses interfaces give workers visual feedback hands-free and support performance evaluation.",
+      "Built together with laboratory researchers at UESTC."
+    ],
+    tech: ["Action recognition", "Deep learning", "XR / smart glasses"],
+    images: [{ src: "assets/ai-glasses-1.jpg", alt: "Worker activity detection on the assembly line" }],
+    video: null,
+    links: []
+  },
+  {
+    title: "AI English Learning App for Children",
+    type: "App",
+    start: "2024-05", end: null,
+    description: "An AI-powered English learning app for children with multilingual support. Speech-to-text and text-to-speech make lessons interactive, and children receive guidance in their native language.",
+    points: [
+      "NLP and LLM models provide adaptive content and multilingual instruction.",
+      "Child-friendly UI/UX built in Unity, optimised for smooth cross-platform performance.",
+      "Integrated with a backend team for adaptive content delivery and interactive feedback."
+    ],
+    tech: ["Unity", "C#", "NLP / LLM", "Speech-to-text", "Text-to-speech"],
+    images: [{ src: "assets/english-app-1.png", alt: "Lesson screen" }, { src: "assets/english-app-2.png", alt: "Language selection" }],
+    video: { file: "assets/english-app-demo.mp4", poster: "assets/english-app-1.png" },
+    links: []
+  },
+  {
+    title: "Pilolo",
+    type: "Game",
+    start: "2017-06", end: "2018-07",
+    description: "A 3D mobile game released on the Google Play Store. I did all of the work: programming, 3D art, animation, UI and publishing.",
+    points: [
+      "Programmed gameplay mechanics, game logic and controls for Android.",
+      "Created all 3D assets, characters and textures, then rigged and animated characters, UI and objects.",
+      "Designed menus and HUD, added a virtual reality mode, and managed the Play Store release."
+    ],
+    tech: ["Unity", "C#", "Blender", "Photoshop", "Android", "VR"],
+    images: [{ src: "assets/pilolo-1.jpg", alt: "Gameplay in the 3D environment" }, { src: "assets/pilolo-2.jpg", alt: "Main menu and HUD" }],
+    video: { youtube: "VIDEO_ID" },
+    links: [{ label: "Google Play", url: "https://play.google.com/store/apps/details?id=YOUR_PACKAGE" }]
+  }
+];
+
+/* ===== PUBLICATIONS: pos = author position ===== */
+const PUBS = [
+ [2026,1,"EMNet: Efficient Multimodal Network for Action Recognition","Information Fusion","JCR Q1"],
+ [2026,3,"MCDF: Multimodal information fusion and causal analysis for election misinformation detection","Information Fusion","JCR Q1"],
+ [2026,4,"DCAGTN: Dual-snapshot causal-attention graph transformer with feedback mechanism for real-time rumor detection","Knowledge-Based Systems","JCR Q1"],
+ [2025,3,"Tb-mmrd: transformer-based multi-modal election rumor detection with agreement-aware gating and semantic fusion","Multimedia Systems","JCR Q2"],
+ [2025,3,"LiSENCE: A Hybrid Ligand and Sequence Encoder Network for Predicting CYP450 Inhibitors in Safe Multidrug Administration","Mathematics",""],
+ [2025,4,"MEN: leveraging explainable multimodal encoding network for precision prediction of CYP450 inhibitors","Scientific Reports","JCR Q1"],
+ [2025,5,"CMNet: Cross-Modal Coarse-to-Fine Network for Point Cloud Completion Based on Patches","IEEE Transactions on Circuits and Systems for Video Technology","JCR Q1"],
+ [2025,5,"Learning-centered multi-modal federated learning complimented with filter rotation for clinical image diagnosis","Engineering Applications of Artificial Intelligence","JCR Q1"],
+ [2024,1,"EGTCN: An efficient graph and temporal convolution network for sensor-based human activity recognition in federated learning","IEEE Sensors Journal","JCR Q1"],
+ [2024,2,"Bridging the gap: Predictive contracts in blockchain - achieving recalibration for industrial networks","Journal of Industrial Information Integration","JCR Q1"],
+ [2024,3,"Pre-Trained Transformer-Based Models for Text Classification Using Low-Resourced Ewe Language","Systems",""],
+ [2024,4,"Cov-Fed: Federated learning-based framework for COVID-19 diagnosis using chest X-ray scans","Engineering Applications of Artificial Intelligence","JCR Q1"],
+ [2024,4,"E-MuLA: An Ensemble Multi-Localized Attention Feature Extraction Network for Viral Protein Subcellular Localization","Information","JCR Q2"],
+ [2023,1,"Self-relational graph convolution network for skeleton-based action recognition","Proceedings of the 31st ACM International Conference on Multimedia","CCF A"],
+ [2023,2,"Flood or Non-Flooded: A Comparative Study of State-of-the-Art Models for Flood Image Classification Using the FloodNet Dataset with Uncertainty Offset Analysis","Water","JCR Q2"],
+ [2023,3,"Gaze-it: Intelligent multimodal AR cross-reality control system","IEEE International Symposium on Mixed and Augmented Reality Adjunct","CCF B"],
+ [2023,7,"Automated vision-based structural health inspection and assessment for post-construction civil infrastructure","Automation in Construction","JCR Q1"],
+ [2022,3,"Animal species detection and classification framework based on modified multi-scale attention mechanism and feature pyramid network","Scientific African","JCR Q1"],
+ [2022,5,"Classification from Sky: A Robust Remote Sensing Time Series Image Classification Using Spatial Encoder and Multi-Fast Channel Attention","Journal of King Saud University - Computer and Information Sciences","JCR Q1"]
+];
+/* ================================================= */
+
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; };
+const M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const fmt = d => { const [y, m] = d.split("-"); return M[m - 1] + " " + y; };
+
+function render() {
+  const list = $("#list");
+  [...PROJECTS].sort((a, b) => b.start.localeCompare(a.start)).forEach(p => {
+    const art = el("article", "project");
+    art.dataset.type = p.type;
+    const meta = el("div", "date");
+    meta.append(el("span", "type", p.type), " · ");
+    const time = el("time", "", fmt(p.start) + " – " + (p.end ? fmt(p.end) : "present"));
+    time.dateTime = p.start;
+    meta.append(time);
+    art.append(meta, el("h3", "", p.title), el("p", "desc", p.description));
+    if (p.points?.length) { const ul = el("ul", "points"); p.points.forEach(x => ul.append(el("li", "", x))); art.append(ul); }
+    if (p.tech?.length) { const ul = el("ul", "tags"); p.tech.forEach(x => ul.append(el("li", "", x))); art.append(ul); }
+
+    const media = el("div", "media");
+    (p.images || []).forEach(im => {
+      const b = el("button", "shot"); b.type = "button"; b.setAttribute("aria-label", "Enlarge: " + im.alt);
+      const img = new Image(); img.src = im.src; img.alt = im.alt; img.loading = "lazy";
+      img.onerror = () => { b.classList.add("missing"); b.disabled = true; b.textContent = "Add " + im.src; };
+      b.append(img); b.onclick = () => openBox(im); media.append(b);
+    });
+    if (p.video) {
+      const v = el("div", "video");
+      if (p.video.youtube) {
+        const f = document.createElement("iframe");
+        f.src = "https://www.youtube-nocookie.com/embed/" + p.video.youtube;
+        f.title = p.title + " video"; f.loading = "lazy"; f.allowFullscreen = true; v.append(f);
+      } else {
+        const vid = document.createElement("video");
+        vid.controls = true; vid.preload = "metadata"; vid.src = p.video.file;
+        if (p.video.poster) vid.poster = p.video.poster;
+        vid.setAttribute("aria-label", p.title + " demo video"); v.append(vid);
+      }
+      media.append(v);
+    }
+    if (media.children.length) art.append(media);
+    if (p.links?.length) {
+      const d = el("div", "project-links");
+      p.links.forEach(l => { const a = el("a", "", l.label); a.href = l.url; d.append(a); });
+      art.append(d);
+    }
+    list.append(art);
+  });
+
+  const f = $(".filters");
+  ["All", ...new Set(PROJECTS.map(p => p.type))].forEach((ty, i) => {
+    const b = el("button", "", ty); b.type = "button"; b.setAttribute("aria-pressed", i === 0);
+    b.onclick = () => {
+      f.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+      document.querySelectorAll(".project").forEach(a => a.hidden = ty !== "All" && a.dataset.type !== ty);
+    };
+    f.append(b);
+  });
+
+  const ord = n => n + (n === 1 ? "st" : n === 2 ? "nd" : n === 3 ? "rd" : "th");
+  const pubs = $("#pubs");
+  PUBS.forEach(([yr, pos, title, venue, rank]) => {
+    const li = el("li"); li.dataset.pos = pos;
+    li.append(el("span", "yr", yr));
+    const d = el("div");
+    d.append(el("div", "t", title));
+    const v = el("div", "v", venue + " · " + ord(pos) + " author");
+    if (rank) v.append(el("span", "rk", rank));
+    d.append(v); li.append(d); pubs.append(li);
+  });
+  $("#first").onchange = e => pubs.querySelectorAll("li").forEach(li => li.hidden = e.target.checked && li.dataset.pos !== "1");
+}
+
+const box = $("#lightbox");
+function openBox(im) { $("img", box).src = im.src; $("img", box).alt = im.alt; $("p", box).textContent = im.alt; box.showModal(); }
+$("#close").onclick = () => box.close();
+box.addEventListener("click", e => { if (e.target === box) box.close(); });
+$("#theme").onclick = () => {
+  const r = document.documentElement;
+  const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+};
+$("#year").textContent = new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
